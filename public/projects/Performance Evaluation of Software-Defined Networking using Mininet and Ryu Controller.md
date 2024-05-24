@@ -4,5 +4,5 @@ This research project explores the scalability, throughput, and latency of Softw
 
 # Link
 
-[Full Paper](https://drive.google.com/file/d/1EGMiDi30DVXXsLKjrwHvhUiWJA-89Bqm/view)
-[Github Repo](https://github.com/Patrick8894/SDN)
+- [Full Paper](https://drive.google.com/file/d/1EGMiDi30DVXXsLKjrwHvhUiWJA-89Bqm/view)
+- [Github Repo](https://github.com/Patrick8894/SDN)

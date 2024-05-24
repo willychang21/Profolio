@@ -4,4 +4,4 @@ Our project introduces a hybrid checkpointing approach for serverless computing,
 
 # Link
 
-[Full Paper link](https://drive.google.com/file/d/10u8F0rvaDctXtf7ZJZaqDRalzZoqudZJ/view)
+[Full Paper](https://drive.google.com/file/d/10u8F0rvaDctXtf7ZJZaqDRalzZoqudZJ/view)
