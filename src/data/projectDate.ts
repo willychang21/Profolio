@@ -18,19 +18,19 @@ export const projectDetail: ProjectsByYear[] = [
                 title: 'Profolio Website',
                 date: 'May 24 2024',
                 duration: '1 min',
-                image: '/public/image/Profolio Website.png'
+                image: '/image/Profolio Website.png'
             },
             {
                 title: 'A decentralized serverless orchestrator with in-memory data store',
                 date: 'May 2024',
                 duration: '1 min',
-                image: '/public/image/A decentralized serverless orchestrator with in-memory data store.png'
+                image: '/image/A decentralized serverless orchestrator with in-memory data store.png'
             },
             {
                 title: 'Performance Evaluation of Software-Defined Networking using Mininet and Ryu Controller',
                 date: 'May 2024',
                 duration: '5 mins',
-                image: '/public/image/Performance Evaluation of Software-Defined Networking using Mininet and Ryu Controller.png'
+                image: '/image/Performance Evaluation of Software-Defined Networking using Mininet and Ryu Controller.png'
             }
         ]
     },
