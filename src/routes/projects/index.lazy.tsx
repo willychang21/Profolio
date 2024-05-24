@@ -1,5 +1,5 @@
 import { createLazyFileRoute } from '@tanstack/react-router';
-import { projects } from '../../data/projects';
+import { projectDetail } from '../../data/projectDate';
 import Project from '../../components/Project';
 import { Link } from '@tanstack/react-router';
 
@@ -11,7 +11,7 @@ function Projects() {
     return (
         <div className="max-w-5xl mx-auto p-4">
             <h1 className="text-3xl font-bold mb-8">Projects</h1>
-            {projects.map((yearlyProjects) => (
+            {projectDetail.map((yearlyProjects) => (
                 <div key={yearlyProjects.year}>
                     <h2 className="text-2xl font-bold mb-4">{yearlyProjects.year}</h2>
                     <hr className="border-gray-200 mb-8" />

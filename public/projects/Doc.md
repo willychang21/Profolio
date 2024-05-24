@@ -1,7 +1,3 @@
-::: info
-Following content is adapted from https://markdown-it.github.io/
-:::
-
 # h1 Heading
 
 ## h2 Heading
@@ -9,10 +5,6 @@ Following content is adapted from https://markdown-it.github.io/
 ### h3 Heading
 
 #### h4 Heading
-
-##### h5 Heading
-
-###### h6 Heading
 
 ## Horizontal Rules
 
@@ -40,7 +32,7 @@ _This is italic text_
 
 ## Lists
 
-Unordered
+### Unordered
 
 - Create a list by starting a line with `+`, `-`, or `*`
 - Sub-lists are made by indenting 2 spaces:
@@ -50,33 +42,18 @@ Unordered
     - Nulla volutpat aliquam velit
 - Very easy!
 
-Ordered
+### Ordered
 
 1. Lorem ipsum dolor sit amet
 2. Consectetur adipiscing elit
 3. Integer molestie lorem at massa
+4. You can use sequential numbers...
 
 ## Code
 
 Inline `code`
 
-Indented code
-
-    // Some comments
-    line 1 of code
-    line 2 of code
-    line 3 of code
-
-Block code "fences"
-
-```
-Sample text here...
-Sample text here
-Sample text here
-Sample text here
-```
-
-Syntax highlighting
+Block code Highlight
 
 ```js
 var foo = function (bar) {
@@ -84,11 +61,6 @@ var foo = function (bar) {
 }
 
 console.log(foo(5))
-```
-
-```python
-def hello_world():
-    print("Hello World!")
 ```
 
 ## Tables
@@ -109,26 +81,39 @@ Right aligned columns
 
 ## Links
 
-[link text](https://noworneverev.github.io/)
+[link text](http://dev.nodeca.com)
 
-[link with title](https://github.com/noworneverev/react-vscode-portfolio 'title text!')
+[link with title](http://nodeca.github.io/pica/demo/ 'title text!')
 
-Autoconverted link https://noworneverev.github.io/
+Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
 
-## Alerts
+## Images
 
-::: warning
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-:::
+![Minion](https://octodex.github.com/images/minion.png)
 
-::: info
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-:::
+## Emojies
 
-::: success
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-:::
+Classic markup: :wink: :cry: :laughing: :yum:
 
-::: error
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-:::
+## Latex
+
+Here is some inline math: $E = mc^2$.
+
+And here is a block of math:
+
+$$
+a^2 + b^2 = c^2
+$$
+
+## Footnotes
+
+Footnote 1 link[^first].
+
+Footnote 2 link[^second].
+
+Inline footnote^[Text of inline footnote] definition.
+
+Duplicated footnote reference[^second].
+
+[^first]: Footnote **can have markup** and multiple paragraphs.
+[^second]: Footnote text.

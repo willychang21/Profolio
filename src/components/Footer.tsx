@@ -1,4 +1,4 @@
-import { personalInfo } from '../config/personalInfo';
+import { personalInfo } from '../data/personalInfo';
 
 function Footer() {
     return (

@@ -20,7 +20,7 @@ function RootLayout() {
             <Navbar />
             <main className="flex-grow p-4">
                 <Outlet />
-                <TanStackRouterDevtools />
+                {/* <TanStackRouterDevtools /> */}
             </main>
             <Footer />
         </div>

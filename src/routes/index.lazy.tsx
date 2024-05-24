@@ -4,7 +4,7 @@ export const Route = createLazyFileRoute('/')({
     component: Home
 });
 
-import { personalInfo, SocialLink, SkillCategory } from '../config/personalInfo';
+import { personalInfo, SocialLink, SkillCategory } from '../data/personalInfo';
 
 //TODO: Github activity history
 function Home() {

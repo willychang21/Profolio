@@ -1,7 +1,7 @@
 import { createLazyFileRoute } from '@tanstack/react-router';
 import { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
-import { personalInfo, SocialLink } from '../config/personalInfo';
+import { personalInfo, SocialLink } from '../data/personalInfo';
 
 export const Route = createLazyFileRoute('/about')({
     component: About,

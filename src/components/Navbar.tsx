@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from '@tanstack/react-router';
 import LightDarkSwitch from './LightDarkSwitch';
-import { personalInfo } from '../config/personalInfo';
+import { personalInfo } from '../data/personalInfo';
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -17,7 +17,7 @@ function Navbar() {
                 <Link className="hover:text-gray-400 dark:hover:text-gray-300 dark:text-gray-100" to="/about">About</Link>
                 <Link className="hover:text-gray-400 dark:hover:text-gray-300 dark:text-gray-100" to="/projects">Projects</Link>
                 <Link className="hover:text-gray-400 dark:hover:text-gray-300 dark:text-gray-100" to="/cv">CV</Link>
-                <Link className="hover:text-gray-400 dark:hover:text-gray-300 dark:text-gray-100" to="/blog">Blog</Link>
+                {/* <Link className="hover:text-gray-400 dark:hover:text-gray-300 dark:text-gray-100" to="/blog">Blog</Link> */}
                 <LightDarkSwitch />
             </div>
             <div className="flex items-center space-x-4 md:hidden">
@@ -37,7 +37,7 @@ function Navbar() {
                         <Link className="w-full hover:text-gray-400 dark:hover:text-gray-300 dark:text-gray-100" to="/about" onClick={toggleMenu}>About</Link>
                         <Link className="w-full hover:text-gray-400 dark:hover:text-gray-300 dark:text-gray-100" to="/projects" onClick={toggleMenu}>Projects</Link>
                         <Link className="w-full hover:text-gray-400 dark:hover:text-gray-300 dark:text-gray-100" to="/cv">CV</Link>
-                        <Link className="w-full hover:text-gray-400 dark:hover:text-gray-300 dark:text-gray-100" to="/blog">Blog</Link>
+                        {/* <Link className="w-full hover:text-gray-400 dark:hover:text-gray-300 dark:text-gray-100" to="/blog">Blog</Link> */}
                     </div>
                 </div>
             )}

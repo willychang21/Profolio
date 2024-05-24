@@ -1,6 +1,6 @@
 import { IconType } from 'react-icons';
 import { FaPython, FaJs, FaSwift, FaCuttlefish, FaReact, FaAws, FaGoogle, FaDocker, FaGithub, FaEnvelope, FaLinkedin, FaMedium } from 'react-icons/fa';
-import { SiTypescript, SiSvelte, SiNestjs, SiExpress, SiGraphql, SiAxios, SiPrisma, SiVite, SiTailwindcss, SiMongodb, SiMysql, SiPostgresql, SiRedis, SiElasticsearch, SiFirebase, SiKubernetes, SiAnsible, SiLinux, SiApachekafka, SiNeo4J, SiNextdotjs, SiAmazondynamodb, SiMui, SiAmazons3, SiBootstrap, SiPostman, SiFlask } from 'react-icons/si';
+import { SiTypescript, SiSvelte, SiNestjs, SiExpress, SiGraphql, SiAxios, SiPrisma, SiVite, SiTailwindcss, SiMongodb, SiMysql, SiPostgresql, SiRedis, SiElasticsearch, SiFirebase, SiKubernetes, SiAnsible, SiLinux, SiApachekafka, SiNeo4J, SiNextdotjs, SiAmazondynamodb, SiMui, SiAmazons3, SiBootstrap, SiPostman, SiFlask, SiYoutubemusic } from 'react-icons/si';
 import { TbApi, TbBeach } from 'react-icons/tb';
 
 export interface SocialLink {
@@ -44,6 +44,11 @@ export const personalInfo = {
             url: 'https://medium.com/@willychang17',
             icon: FaMedium,
         },
+        {
+            name: 'Youtube Music',
+            url: 'https://music.youtube.com/playlist?list=PL0glHKqK-DSrMOnJtbyBhA-9s3ZMD4D8k&si=yt9Fo-HC3lw1ZavU',
+            icon: SiYoutubemusic,
+        }
     ] as SocialLink[],
     skills: [
         {
