@@ -4,7 +4,7 @@ import NotFound from '../components/NotFound';
 import { useThemeStore } from '../store/useThemeStore';
 import { createRootRoute } from '@tanstack/react-router';
 import { Outlet } from '@tanstack/react-router';
-import { TanStackRouterDevtools } from '@tanstack/router-devtools';
+// import { TanStackRouterDevtools } from '@tanstack/router-devtools';
 
 
 export const Route = createRootRoute({
