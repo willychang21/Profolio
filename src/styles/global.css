@@ -4,16 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* Global styles */
 body {
     @apply transition-colors duration-300;
-    @apply bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100;
+    @apply bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-200;
 }
 
-/* a {
+a {
     @apply text-black hover:text-gray-500 dark:text-blue-300 dark:hover:text-blue-500;
-} */
+}
 
 h1,
 h2,

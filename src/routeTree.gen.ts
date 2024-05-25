@@ -16,7 +16,6 @@ import { Route as rootRoute } from './routes/__root'
 
 // Create Virtual Routes
 
-const CvLazyImport = createFileRoute('/cv')()
 const BlogLazyImport = createFileRoute('/blog')()
 const AboutLazyImport = createFileRoute('/about')()
 const IndexLazyImport = createFileRoute('/')()
@@ -24,11 +23,6 @@ const ProjectsIndexLazyImport = createFileRoute('/projects/')()
 const ProjectsProjectIdLazyImport = createFileRoute('/projects/$projectId')()
 
 // Create/Update Routes
-
-const CvLazyRoute = CvLazyImport.update({
-  path: '/cv',
-  getParentRoute: () => rootRoute,
-} as any).lazy(() => import('./routes/cv.lazy').then((d) => d.Route))
 
 const BlogLazyRoute = BlogLazyImport.update({
   path: '/blog',
@@ -84,13 +78,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogLazyImport
       parentRoute: typeof rootRoute
     }
-    '/cv': {
-      id: '/cv'
-      path: '/cv'
-      fullPath: '/cv'
-      preLoaderRoute: typeof CvLazyImport
-      parentRoute: typeof rootRoute
-    }
     '/projects/$projectId': {
       id: '/projects/$projectId'
       path: '/projects/$projectId'
@@ -114,7 +101,6 @@ export const routeTree = rootRoute.addChildren({
   IndexLazyRoute,
   AboutLazyRoute,
   BlogLazyRoute,
-  CvLazyRoute,
   ProjectsProjectIdLazyRoute,
   ProjectsIndexLazyRoute,
 })

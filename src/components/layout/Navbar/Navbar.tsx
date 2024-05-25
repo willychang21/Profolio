@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from '@tanstack/react-router';
 import LightDarkSwitch from './LightDarkSwitch';
-import { personalInfo } from '../data/personalInfo';
+import { personalInfo } from '../../../data/personalInfo';
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -11,13 +11,12 @@ function Navbar() {
     return (
         <nav className="flex justify-between items-center p-4 transition-colors duration-300 bg-white dark:bg-gray-800">
             <div className="text-lg font-bold">
-                <Link className="hover:text-gray-400 dark:hover:text-gray-300 dark:text-gray-100" to="/">{personalInfo.name}'s Homepage</Link>
+                <Link className="hover:text-gray-400 dark:hover:text-gray-300 dark:text-gray-100" to="/">{personalInfo.firstName}'s Homepage</Link>
             </div>
             <div className="hidden md:flex space-x-4 items-center">
                 <Link className="hover:text-gray-400 dark:hover:text-gray-300 dark:text-gray-100" to="/about">About</Link>
                 <Link className="hover:text-gray-400 dark:hover:text-gray-300 dark:text-gray-100" to="/projects">Projects</Link>
-                <Link className="hover:text-gray-400 dark:hover:text-gray-300 dark:text-gray-100" to="/cv">CV</Link>
-                {/* <Link className="hover:text-gray-400 dark:hover:text-gray-300 dark:text-gray-100" to="/blog">Blog</Link> */}
+                <a className="hover:text-gray-400 dark:hover:text-gray-300 dark:text-gray-100" href={personalInfo.cvLink} target="_blank" rel="noopener noreferrer">CV</a>
                 <LightDarkSwitch />
             </div>
             <div className="flex items-center space-x-4 md:hidden">
@@ -36,8 +35,7 @@ function Navbar() {
                     <div className="flex flex-col items-start p-4 space-y-4">
                         <Link className="w-full hover:text-gray-400 dark:hover:text-gray-300 dark:text-gray-100" to="/about" onClick={toggleMenu}>About</Link>
                         <Link className="w-full hover:text-gray-400 dark:hover:text-gray-300 dark:text-gray-100" to="/projects" onClick={toggleMenu}>Projects</Link>
-                        <Link className="w-full hover:text-gray-400 dark:hover:text-gray-300 dark:text-gray-100" to="/cv">CV</Link>
-                        {/* <Link className="w-full hover:text-gray-400 dark:hover:text-gray-300 dark:text-gray-100" to="/blog">Blog</Link> */}
+                        <a className="w-full hover:text-gray-400 dark:hover:text-gray-300 dark:text-gray-100" href={personalInfo.cvLink} target="_blank" rel="noopener noreferrer">CV</a>
                     </div>
                 </div>
             )}

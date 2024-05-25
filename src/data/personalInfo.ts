@@ -21,8 +21,10 @@ export interface SkillCategory {
 
 export const personalInfo = {
     name: 'Chun Chieh Chang',
+    firstName: 'Chun Chieh',
     avatar: '/avatar.jpeg',
     intro: "As a Master's student in Computer Science at the University of Illinois Urbana-Champaign, I specialize in full-stack development, AI, and cloud computing. Currently, I'm interning at Kocree, where I design and implement end-to-end systems for AI music creation.",
+    cvLink: 'https://drive.google.com/file/d/1EoCmruL2Iu4vNZsRDJB6klPqoiAtNb_O/view?usp=sharing',
     socialLinks: [
         {
             name: 'Github',

@@ -34,26 +34,27 @@ export const projectDetail: ProjectsByYear[] = [
             }
         ]
     },
-    // {
-    //     year: '2023',
-    //     projects: [
-    //         {
-    //             title: 'X Clone Full Stack Web Application',
-    //             date: 'Dec 2023',
-    //             duration: '1 min',
-    //         },
-    //         {
-    //             title: 'Case Study in Data Cleaning and Provenance',
-    //             date: 'Jun 2023',
-    //             duration: '1 min',
-    //         },
-    //         {
-    //             title: 'CS PhD Academic World Website',
-    //             date: 'Apr 2023',
-    //             duration: '1 min',
-    //         }
-    //     ]
-    // },
+    {
+        year: '2023',
+        projects: [
+            // {
+            //     title: 'X Clone Full Stack Web Application',
+            //     date: 'Dec 2023',
+            //     duration: '1 min',
+            // },
+            // {
+            //     title: 'Case Study in Data Cleaning and Provenance',
+            //     date: 'Jun 2023',
+            //     duration: '1 min',
+            // },
+            {
+                title: 'CS PhD Academic World Website',
+                date: 'Apr 2023',
+                duration: '5 min',
+                image: '/image/CS PhD Academic World Website.png'
+            }
+        ]
+    },
     // {
     //     year: '2022',
     //     projects: [
@@ -64,6 +65,17 @@ export const projectDetail: ProjectsByYear[] = [
     //         }
     //     ]
     // },
+    {
+        year: '2018',
+        projects: [
+            {
+                title: 'MapboxARGame',
+                date: 'Nov 2018',
+                duration: '3 min',
+                image: '/image/MapboxARGame.jpeg'
+            }
+        ]
+    },
     {
         year: '2077',
         projects: [

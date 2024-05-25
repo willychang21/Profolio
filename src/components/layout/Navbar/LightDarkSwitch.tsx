@@ -1,4 +1,4 @@
-import { useThemeStore } from '../store/useThemeStore';
+import { useThemeStore } from '../../../store/useThemeStore';
 import { FaSun, FaMoon } from 'react-icons/fa';
 
 function LightDarkSwitch() {

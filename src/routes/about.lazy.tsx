@@ -1,7 +1,8 @@
 import { createLazyFileRoute } from '@tanstack/react-router';
 import { useState, useEffect } from 'react';
+import { personalInfo } from '../data/personalInfo';
+import SocialLinks from '../components/SocialLinks';
 import ReactMarkdown from 'react-markdown';
-import { personalInfo, SocialLink } from '../data/personalInfo';
 
 export const Route = createLazyFileRoute('/about')({
     component: About,
@@ -17,30 +18,22 @@ function About() {
     }, []);
 
     return (
-        <div className="markdown-body max-w-5xl mx-auto p-4">
+        <div className="max-w-5xl mx-auto p-4">
             <div className="flex flex-col items-center mb-8">
+                {/* Avatar Section */}
                 <img
                     src={personalInfo.avatar}
                     alt={personalInfo.name}
                     className="w-32 h-32 rounded-full mb-4"
                 />
+                {/* Name and Social Links */}
                 <h1 className="text-3xl font-bold mb-2">{personalInfo.name}</h1>
-                <div className="flex space-x-4">
-                    {personalInfo.socialLinks.map((link: SocialLink) => (
-                        //BUG: The text color should be gray-900 in light mode
-                        <a
-                            key={link.name}
-                            href={link.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-gray-900 dark:text-gray-100 hover:text-blue-500 dark:hover:text-blue-500"
-                        >
-                            <link.icon size="24" />
-                        </a>
-                    ))}
-                </div>
+                <SocialLinks links={personalInfo.socialLinks} />
             </div>
-            <ReactMarkdown>{content}</ReactMarkdown>
+            {/* Markdown content */}
+            <div className="markdown-body">
+                <ReactMarkdown>{content}</ReactMarkdown>
+            </div>
         </div>
     );
 }

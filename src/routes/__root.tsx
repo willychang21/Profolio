@@ -1,5 +1,5 @@
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import Navbar from '../components/layout/Navbar/Navbar';
+import Footer from '../components/layout/Footer/Footer';
 import NotFound from '../components/NotFound';
 import { useThemeStore } from '../store/useThemeStore';
 import { createRootRoute } from '@tanstack/react-router';

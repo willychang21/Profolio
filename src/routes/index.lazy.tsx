@@ -1,12 +1,11 @@
 import { createLazyFileRoute } from '@tanstack/react-router';
+import { personalInfo, SkillCategory } from '../data/personalInfo';
+import SocialLinks from '../components/SocialLinks';
 
 export const Route = createLazyFileRoute('/')({
     component: Home
 });
 
-import { personalInfo, SocialLink, SkillCategory } from '../data/personalInfo';
-
-//TODO: Github activity history
 function Home() {
     return (
         <div className="flex flex-col items-center md:flex-row md:items-start p-4 max-w-5xl mx-auto">
@@ -22,24 +21,13 @@ function Home() {
             <div className="text-center md:text-left">
                 <h1 className="text-3xl font-bold mb-2">{personalInfo.name}</h1>
                 <div className="flex justify-center md:justify-start space-x-4 mb-4">
-                    {personalInfo.socialLinks.map((link: SocialLink) => {
-                        const IconComponent = link.icon;
-                        return (
-                            <a
-                                key={link.name}
-                                href={link.url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-gray-900 dark:text-gray-100 hover:text-blue-500 dark:hover:text-blue-500"
-                            >
-                                <IconComponent size="24" />
-                            </a>
-                        );
-                    })}
+                    <SocialLinks links={personalInfo.socialLinks} />
                 </div>
+                {/* Introduction Section */}
                 <p className="mb-4">
                     {personalInfo.intro}
                 </p>
+                {/* Skills Section */}
                 <h2 className="text-2xl font-bold mb-4">Skills</h2>
                 {personalInfo.skills.map((category: SkillCategory) => (
                     <div key={category.category} className="mb-4">
