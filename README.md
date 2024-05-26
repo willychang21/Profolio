@@ -1,8 +1,6 @@
 # Portfolio Website
 
-## Tech Stack
-
-### Build With
+## Build With
 
 - **Framework:** React
 - **Build Tool:** Vite
@@ -10,6 +8,13 @@
 - **State Management:** Zustand
 - **Routing:** TanStack Router
 - **Markdown Parsing:** react-markdown
+- **Deploy & Analytics**: Vercel
+
+## Feature
+
+1. **Responsive Design**: The website supports all platforms for optimal viewing on any device.
+2. **Dark Mode**: Toggle between light and dark themes for a better user experience.
+3. **Markdown Content Management**: Easily manage and edit content using Markdown.
 
 ## Installation
 
