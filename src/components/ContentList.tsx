@@ -1,5 +1,5 @@
-import { Link, useSearch, useNavigate } from '@tanstack/react-router';
-import { useState, useEffect } from 'react';
+import { Link, useNavigate } from '@tanstack/react-router';
+import { useState } from 'react';
 import { ContentYear } from '../data/contentInterfaces';
 
 interface ContentListProps {
@@ -8,13 +8,9 @@ interface ContentListProps {
 }
 
 const ContentList: React.FC<ContentListProps> = ({ content, basePath }) => {
-    const search = useSearch({ basePath });
-    const navigate = useNavigate();
-    const [selectedTag, setSelectedTag] = useState<string | null>(search.tag || null);
 
-    useEffect(() => {
-        setSelectedTag(search.tag || null);
-    }, [search.tag]);
+    const navigate = useNavigate();
+    const [selectedTag, setSelectedTag] = useState<string | null>(null);
 
     const handleTagClick = (tag: string) => {
         const newTag = selectedTag === tag ? null : tag;
@@ -43,7 +39,7 @@ const ContentList: React.FC<ContentListProps> = ({ content, basePath }) => {
                 {allTags.map(tag => (
                     <span
                         key={tag}
-                        onClick={() => handleTagClick(tag)}
+                        onClick={() => handleTagClick(tag || "")}
                         className={`cursor-pointer px-3 py-2 rounded-full transition-all duration-300 transform hover:scale-110 ${selectedTag === tag ? 'bg-gray-500 text-white' : 'bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200'
                             }`}
                     >

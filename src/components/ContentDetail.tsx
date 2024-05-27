@@ -58,7 +58,7 @@ const ContentDetail: React.FC<ContentDetailProps> = ({ content, markdownPath, ba
     const handleTagClick = (tag: string) => {
         navigate({
             to: basePath,
-            search: { tag }
+            params: { tag }
         });
     };
 
