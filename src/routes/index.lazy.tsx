@@ -60,7 +60,7 @@ function Home() {
                     {personalInfo.intro}
                 </p>
                 {/* Skills Section */}
-                <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md">
                     <h2 className="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">Skills</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         {personalInfo.skills.map((category: SkillCategory, index) => (

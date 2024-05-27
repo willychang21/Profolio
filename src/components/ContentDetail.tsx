@@ -55,6 +55,7 @@ const ContentDetail: React.FC<ContentDetailProps> = ({ content, markdownPath, ba
         return () => observer.disconnect();
     }, [toc]);
 
+    //BUG: Navigate back to ContentList without tag filter
     const handleTagClick = (tag: string) => {
         navigate({
             to: basePath,

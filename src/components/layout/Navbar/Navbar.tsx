@@ -9,7 +9,7 @@ function Navbar() {
     const toggleMenu = () => setMenuOpen(!menuOpen);
 
     return (
-        <nav className="flex justify-between items-center p-4 transition-colors duration-300 bg-white dark:bg-gray-800 shadow-md">
+        <nav className="flex justify-between items-center p-4 transition-colors duration-300 bg-white dark:bg-gray-800 shadow-md relative z-50">
             <div className="text-lg font-bold transition-transform duration-300 hover:scale-105">
                 <Link className="hover:text-gray-400 dark:hover:text-gray-300 dark:text-gray-100" to="/">{personalInfo.firstName}'s Homepage</Link>
             </div>
@@ -33,7 +33,7 @@ function Navbar() {
                 </button>
             </div>
             {menuOpen && (
-                <div className="absolute top-16 left-0 w-full transition-all duration-300 bg-white text-gray-900 dark:bg-gray-800 dark:text-white md:hidden animate-slide-down">
+                <div className="absolute top-16 left-0 w-full transition-all duration-300 bg-white text-gray-900 dark:bg-gray-800 dark:text-white md:hidden animate-slide-down z-50">
                     <div className="flex flex-col items-start p-4 space-y-4">
                         <Link className="w-full transition duration-300 transform hover:text-gray-400 dark:hover:text-gray-300 dark:text-gray-100 hover:scale-105" to="/about" onClick={toggleMenu}>About</Link>
                         <Link className="w-full transition duration-300 transform hover:text-gray-400 dark:hover:text-gray-300 dark:text-gray-100 hover:scale-105" to="/projects" onClick={toggleMenu}>Projects</Link>
