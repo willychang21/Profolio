@@ -23,7 +23,8 @@ export const personalInfo = {
     name: 'Chun Chieh Chang',
     firstName: 'Chun Chieh',
     avatar: '/avatar.jpeg',
-    intro: "As a Master's student in Computer Science at the University of Illinois Urbana-Champaign, I specialize in full-stack development, AI, and cloud computing. Currently, I'm interning at Kocree, where I design and implement end-to-end systems for AI music creation.",
+    intro: "Hi everyone! My name is Chun Chieh Chang, and I'm from Taiwan 🇹🇼. I'm currently a second-year Computer Science student at the University of Illinois at Urbana-Champaign. I’m also interning at Kocree, where I'm contributing to the development of an innovative Music AI Platform.",
+    location: 'Champaign, IL',
     cvLink: 'https://drive.google.com/file/d/1EoCmruL2Iu4vNZsRDJB6klPqoiAtNb_O/view?usp=sharing',
     socialLinks: [
         {
@@ -102,7 +103,7 @@ export const personalInfo = {
             ],
         },
         {
-            category: 'Message Brokers / Search Engines',
+            category: 'Message and Search',
             skills: [
                 { name: 'Kafka', icon: SiApachekafka },
                 { name: 'ElasticSearch', icon: SiElasticsearch },

@@ -45,7 +45,7 @@
 
     ul,
     ol {
-        @apply pl-5 mb-2;
+        @apply pl-5 mb-4;
     }
 
     ul {
@@ -54,6 +54,10 @@
 
     ol {
         @apply list-decimal;
+    }
+
+    li {
+        @apply mb-2;
     }
 
     blockquote {

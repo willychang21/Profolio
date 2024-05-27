@@ -14,9 +14,13 @@ The previous iteration of my personal website was based on a forked template, ma
 
 ## Feature
 
-1. **Responsive Design**: The website supports all platforms for optimal viewing on any device.
-2. **Dark Mode**: Toggle between light and dark themes for a better user experience.
-3. **Markdown Content Management**: Easily manage and edit content using Markdown.
+1. **Responsive Design**: Ensures optimal viewing experience across all devices.
+2. **Animation**: Enhances the visual appeal and user experience.
+3. **Dark Mode**: Toggle between light and dark themes for user preference.
+4. **Markdown Content Management**: Easily manage and edit content using Markdown.
+5. **Content Category**: Users can choose their preferred topics to explore.
+6. **Table of Contents**: Provides easy navigation to different sections of a post with a dynamic table of contents.
+7. **Share Content**: Users can share interesting posts on social media platforms.
 
 ## Repository
 
