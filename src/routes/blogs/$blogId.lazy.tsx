@@ -23,6 +23,6 @@ function BlogDetail() {
     return (
         <ContentDetail content={blog} markdownPath={markdownPath} basePath="/blogs" />
     );
-}
+} 
 
 export default BlogDetail;

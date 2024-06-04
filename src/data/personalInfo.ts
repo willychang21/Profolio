@@ -1,6 +1,7 @@
 import { IconType } from 'react-icons';
-import { FaPython, FaJs, FaSwift, FaCuttlefish, FaReact, FaAws, FaGoogle, FaDocker, FaGithub, FaEnvelope, FaLinkedin, FaMedium } from 'react-icons/fa';
-import { SiTypescript, SiSvelte, SiNestjs, SiExpress, SiGraphql, SiAxios, SiPrisma, SiVite, SiTailwindcss, SiMongodb, SiMysql, SiPostgresql, SiRedis, SiElasticsearch, SiFirebase, SiKubernetes, SiAnsible, SiLinux, SiApachekafka, SiNeo4J, SiNextdotjs, SiAmazondynamodb, SiMui, SiAmazons3, SiBootstrap, SiPostman, SiFlask, SiYoutubemusic } from 'react-icons/si';
+import { FaPython, FaJs, FaSwift, FaCuttlefish, FaReact, FaAws, FaGoogle, FaDocker, FaGithub, FaEnvelope, FaLinkedin, FaMedium, FaJira, FaSlack, FaConfluence } from 'react-icons/fa';
+import { FaJ, FaS } from 'react-icons/fa6';
+import { SiTypescript, SiSvelte, SiNestjs, SiExpress, SiGraphql, SiAxios, SiPrisma, SiVite, SiTailwindcss, SiMongodb, SiMysql, SiPostgresql, SiRedis, SiElasticsearch, SiFirebase, SiKubernetes, SiAnsible, SiLinux, SiApachekafka, SiNeo4J, SiNextdotjs, SiAmazondynamodb, SiMui, SiAmazons3, SiBootstrap, SiPostman, SiFlask, SiYoutubemusic, SiOpensearch, SiSwagger, SiK3S, SiKeycloak, SiSkaffold, SiDaisyui } from 'react-icons/si';
 import { TbApi, TbBeach } from 'react-icons/tb';
 
 export interface SocialLink {
@@ -75,7 +76,6 @@ export const personalInfo = {
                 { name: 'Flask', icon: SiFlask },
                 { name: 'RESTful', icon: TbApi },
                 { name: 'GraphQL', icon: SiGraphql },
-                { name: 'Postman', icon: SiPostman }
             ],
         },
         {
@@ -87,6 +87,7 @@ export const personalInfo = {
                 { name: 'Vite', icon: SiVite },
                 { name: 'TailwindCSS', icon: SiTailwindcss },
                 { name: 'MUI', icon: SiMui },
+                { name: 'daisyUI', icon: SiDaisyui },
                 { name: 'Bootstrap', icon: SiBootstrap }
             ],
         },
@@ -107,6 +108,7 @@ export const personalInfo = {
             skills: [
                 { name: 'Kafka', icon: SiApachekafka },
                 { name: 'ElasticSearch', icon: SiElasticsearch },
+                { name: 'OpenSearch', icon: SiOpensearch },
             ],
         },
         {
@@ -122,10 +124,24 @@ export const personalInfo = {
             skills: [
                 { name: 'Docker', icon: FaDocker },
                 { name: 'Kubernetes', icon: SiKubernetes },
+                { name: 'K3s', icon: SiK3S },
                 { name: 'Ansible', icon: SiAnsible },
                 { name: 'GitHub Actions', icon: FaGithub },
                 { name: 'Linux', icon: SiLinux },
+                { name: 'Skaffold', icon: SiSkaffold }
             ],
         },
+        {
+            category: 'Tools',
+            skills: [
+                { name: 'Github', icon: FaGithub },
+                { name: 'Postman', icon: SiPostman },
+                { name: 'Jira', icon: FaJira },
+                { name: 'Confluence', icon: FaConfluence },
+                { name: 'Slack', icon: FaSlack },
+                { name: 'Swagger', icon: SiSwagger },
+                { name: 'Keycloak', icon: SiKeycloak },
+            ],
+        }
     ] as SkillCategory[],
 };
