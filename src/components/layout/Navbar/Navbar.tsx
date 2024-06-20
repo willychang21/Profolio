@@ -9,7 +9,7 @@ function Navbar() {
 
   const toggleMenu = () => setMenuOpen(!menuOpen)
 
-  const isActive = (path) => location.pathname === path
+  const isActive = (path: string) => location.pathname === path
 
   return (
     <nav className="flex justify-between items-center p-4 transition-colors duration-300 bg-white dark:bg-gray-800 shadow-md relative z-50">
