@@ -23,28 +23,37 @@ function Navbar() {
       </div>
       <div className="hidden md:flex space-x-4 items-center">
         <Link
-          className={`transition duration-300 transform hover:text-gray-400 dark:hover:text-gray-300 dark:text-gray-100 hover:scale-110 ${
-            isActive('/about') ? 'font-bold underline' : ''
+          className={`relative transition duration-300 transform hover:text-gray-400 dark:hover:text-gray-300 dark:text-gray-100 hover:scale-110 ${
+            isActive('/about') ? 'font-bold' : ''
           }`}
           to="/about"
         >
           About
+          {isActive('/about') && (
+            <span className="absolute left-0 bottom-0 w-full h-1 bg-blue-500 transform scale-x-0 transition-transform duration-300 ease-in-out origin-left"></span>
+          )}
         </Link>
         <Link
-          className={`transition duration-300 transform hover:text-gray-400 dark:hover:text-gray-300 dark:text-gray-100 hover:scale-110 ${
-            isActive('/projects') ? 'font-bold underline' : ''
+          className={`relative transition duration-300 transform hover:text-gray-400 dark:hover:text-gray-300 dark:text-gray-100 hover:scale-110 ${
+            isActive('/projects') ? 'font-bold' : ''
           }`}
           to="/projects"
         >
           Projects
+          {isActive('/projects') && (
+            <span className="absolute left-0 bottom-0 w-full h-1 bg-blue-500 transform scale-x-0 transition-transform duration-300 ease-in-out origin-left"></span>
+          )}
         </Link>
         <Link
-          className={`transition duration-300 transform hover:text-gray-400 dark:hover:text-gray-300 dark:text-gray-100 hover:scale-110 ${
-            isActive('/blogs') ? 'font-bold underline' : ''
+          className={`relative transition duration-300 transform hover:text-gray-400 dark:hover:text-gray-300 dark:text-gray-100 hover:scale-110 ${
+            isActive('/blogs') ? 'font-bold' : ''
           }`}
           to="/blogs"
         >
           Blogs
+          {isActive('/blogs') && (
+            <span className="absolute left-0 bottom-0 w-full h-1 bg-blue-500 transform scale-x-0 transition-transform duration-300 ease-in-out origin-left"></span>
+          )}
         </Link>
         <a
           className="transition duration-300 transform hover:text-gray-400 dark:hover:text-gray-300 dark:text-gray-100 hover:scale-110"
@@ -84,30 +93,39 @@ function Navbar() {
           <div className="flex flex-col items-start p-4 space-y-4">
             <Link
               className={`w-full transition duration-300 transform hover:text-gray-400 dark:hover:text-gray-300 dark:text-gray-100 hover:scale-105 ${
-                isActive('/about') ? 'font-bold underline' : ''
+                isActive('/about') ? 'font-bold' : ''
               }`}
               to="/about"
               onClick={toggleMenu}
             >
               About
+              {isActive('/about') && (
+                <span className="block w-full h-1 bg-blue-500 mt-1 transform scale-x-0 transition-transform duration-300 ease-in-out origin-left"></span>
+              )}
             </Link>
             <Link
               className={`w-full transition duration-300 transform hover:text-gray-400 dark:hover:text-gray-300 dark:text-gray-100 hover:scale-105 ${
-                isActive('/projects') ? 'font-bold underline' : ''
+                isActive('/projects') ? 'font-bold' : ''
               }`}
               to="/projects"
               onClick={toggleMenu}
             >
               Projects
+              {isActive('/projects') && (
+                <span className="block w-full h-1 bg-blue-500 mt-1 transform scale-x-0 transition-transform duration-300 ease-in-out origin-left"></span>
+              )}
             </Link>
             <Link
               className={`w-full transition duration-300 transform hover:text-gray-400 dark:hover:text-gray-300 dark:text-gray-100 hover:scale-105 ${
-                isActive('/blogs') ? 'font-bold underline' : ''
+                isActive('/blogs') ? 'font-bold' : ''
               }`}
               to="/blogs"
               onClick={toggleMenu}
             >
               Blogs
+              {isActive('/blogs') && (
+                <span className="block w-full h-1 bg-blue-500 mt-1 transform scale-x-0 transition-transform duration-300 ease-in-out origin-left"></span>
+              )}
             </Link>
             <a
               className="w-full transition duration-300 transform hover:text-gray-400 dark:hover:text-gray-300 dark:text-gray-100 hover:scale-105"
